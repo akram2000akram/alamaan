@@ -65,6 +65,59 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+
+<style>
+  .events_item {
+    min-height: 420px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+  }
+
+  .events_item .thumb {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .events_item .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .events_item .down-content {
+    padding: 15px;
+  }
+
+  .events_item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .events_item .author {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    display: block;
+  }
+
+  .events_item .price {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    background: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+</style>
+
 </head>
 
 
@@ -233,155 +286,134 @@
 
 
 
-    <section class="section courses" id="serv" style="direction: rtl;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <!-- <h6>Latest Courses</h6> -->
-                        <h2>خدماتنا </h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row event_box">
-
-
-
-                <!-- كاميرات المراقبة -->
-                <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-                    <div class="events_item">
-                        <div class="thumb">
-                            <a href="#"><img src="assets/images/serv1.jpg" alt="" loading="lazy"></a>
-                            <span class="price"><i class="fa fa-video-camera fa-2x"></i></span>
-                            <!-- <span class="price"><h6> <i class="fa fa-video-camera fa-1x"></i></h6></span> -->
-
-
-                        </div>
-                        <div class="down-content">
-                            <h4>كاميرات المراقبة</h4>
-                            <span class="author">تركيب كاميرات بجودة عالية، رؤية ليلية، ومتابعة بالجوال.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- الأقفال الكهربائية والإلكترونية -->
-                <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-                    <div class="events_item">
-                        <div class="thumb">
-                            <a href="#"><img src="assets/images/serv2.png" alt="" loading="lazy"></a>
-                            <span class="price"><i class="fa fa-volume-up fa-2x"></i></span>
-                            <!-- <span class="price"><h6> <i class="fa fa-lock fa-1x"></i></h6></span> -->
-                        </div>
-                        <div class="down-content">
-                            <h4>الأقفال الكهربائية والإلكترونية</h4>
-                            <span class="author">أقفال ذكية بالبصمة أو الهاتف لراحة وأمان أكبر.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- الأنظمة الصوتية التقنية -->
-                <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-                    <div class="events_item">
-                        <div class="thumb">
-                            <a href="#"><img src="assets/images/serv3.jpg" alt="" loading="lazy"></a>
-                            <span class="price"><i class="fa fa-volume-up fa-2x"></i></span>
-                        </div>
-                        <div class="down-content">
-                            <h4>الأنظمة الصوتية التقنية</h4>
-                            <span class="author">أنظمة صوتية للمساجد والمدارس والمنشآت بجودة ممتازة.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- أجهزة الحضور والانصراف -->
-                <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-                    <div class="events_item">
-                        <div class="thumb">
-                            <a href="#"><img src="assets/images/serv4.jpg" alt="" loading="lazy"></a>
-                            <span class="price"><i class="fa fa-clock-o fa-2x"></i></span>
-                        </div>
-                        <div class="down-content">
-                            <h4>أجهزة الحضور والانصراف</h4>
-                            <span class="author">تسجيل حضور الموظفين بالبصمة أو الوجه مع تقارير آلية.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- مقويات الشبكة -->
-                <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-                    <div class="events_item">
-                        <div class="thumb">
-                            <a href="#"><img src="assets/images/serv5.png" alt="" loading="lazy"></a>
-                            <span class="price"><i class="fa fa-wifi fa-2x"></i></span>
-                        </div>
-                        <div class="down-content">
-                            <h4>مقويات الشبكة</h4>
-                            <span class="author">حلول لتقوية تغطية الشبكة وإنترنت أسرع ومستقر.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- HDMI -->
-                <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-                    <div class="events_item">
-                        <div class="thumb">
-                            <a href="#"><img src="assets/images/serv6.png" alt="" loading="lazy"></a>
-                            <span class="price"><i class="fa fa-bell fa-2x"></i></span>
-                        </div>
-                        <div class="down-content">
-                            <h4>موسع HDMI </h4>
-                            <span class="author">
-                               حل متكامل لتمديد إشارات HDMI لمسافات طويلة دون فقدان الجودة
-
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جرس الباب أو الإنتركم -->
-                <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-                    <div class="events_item">
-                        <div class="thumb">
-                            <a href="#"><img src="assets/images/serv7.jpg" alt="" loading="lazy"></a>
-                            <span class="price"><i class="fa fa-home fa-2x"></i></span>
-                        </div>
-                        <div class="down-content">
-                            <h4>جرس الباب أو الإنتركم</h4>
-                            <span class="author">جرس وإنتركم مرئي وصوتي للتحكم بالزوار بسهولة.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- أجهزة تتبع السيارات -->
-                <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-                    <div class="events_item">
-                        <div class="thumb">
-                            <a href="#"><img src="assets/images/serv8.jpg" alt="" loading="lazy"></a>
-                            <span class="price"><i class="fa fa-map-marker fa-2x"></i></span>
-                        </div>
-                        <div class="down-content">
-                            <h4>داش كام</h4>
-                            <span class="author">نوفر كاميرات عالية الجودة تُثبّت داخل السيارة لتسجيل كل ما يحدث أثناء القيادة.</span>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-                <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-                    <div class="events_item">
-
-                    </div>
-                </div>
-            </div>
+    <!-- قسم "خدماتنا" -->
+<section class="section courses" id="serv" style="direction: rtl;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="section-heading">
+          <h2>خدماتنا</h2>
         </div>
-    </section>
+      </div>
+    </div>
+
+    <div class="row event_box">
+
+      <!-- 1 -->
+      <div class="col-lg-4 col-md-6 mb-30 event_outer design">
+        <div class="events_item">
+          <div class="thumb">
+            <a href="#"><img src="assets/images/serv1.jpg" alt="كاميرات المراقبة" loading="lazy"></a>
+            <span class="price"><i class="fa fa-video-camera fa-2x"></i></span>
+          </div>
+          <div class="down-content">
+            <h4>كاميرات المراقبة</h4>
+            <span class="author">تركيب كاميرات بجودة عالية، رؤية ليلية، ومتابعة بالجوال.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-lg-4 col-md-6 mb-30 event_outer design">
+        <div class="events_item">
+          <div class="thumb">
+            <a href="#"><img src="assets/images/serv2.png" alt="الأقفال" loading="lazy"></a>
+            <span class="price"><i class="fa fa-lock fa-2x"></i></span>
+          </div>
+          <div class="down-content">
+            <h4>الأقفال الكهربائية والإلكترونية</h4>
+            <span class="author">أقفال ذكية بالبصمة أو الهاتف لراحة وأمان أكبر.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-lg-4 col-md-6 mb-30 event_outer design">
+        <div class="events_item">
+          <div class="thumb">
+            <a href="#"><img src="assets/images/serv3.jpg" alt="الصوتيات" loading="lazy"></a>
+            <span class="price"><i class="fa fa-volume-up fa-2x"></i></span>
+          </div>
+          <div class="down-content">
+            <h4>الأنظمة الصوتية التقنية</h4>
+            <span class="author">أنظمة صوتية للمساجد والمدارس والمنشآت بجودة ممتازة.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-lg-4 col-md-6 mb-30 event_outer design">
+        <div class="events_item">
+          <div class="thumb">
+            <a href="#"><img src="assets/images/serv4.jpg" alt="الحضور والانصراف" loading="lazy"></a>
+            <span class="price"><i class="fa fa-clock-o fa-2x"></i></span>
+          </div>
+          <div class="down-content">
+            <h4>أجهزة الحضور والانصراف</h4>
+            <span class="author">تسجيل حضور الموظفين بالبصمة أو الوجه مع تقارير آلية.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-lg-4 col-md-6 mb-30 event_outer design">
+        <div class="events_item">
+          <div class="thumb">
+            <a href="#"><img src="assets/images/serv5.png" alt="مقويات الشبكة" loading="lazy"></a>
+            <span class="price"><i class="fa fa-wifi fa-2x"></i></span>
+          </div>
+          <div class="down-content">
+            <h4>مقويات الشبكة</h4>
+            <span class="author">حلول لتقوية تغطية الشبكة وإنترنت أسرع ومستقر.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-lg-4 col-md-6 mb-30 event_outer design">
+        <div class="events_item">
+          <div class="thumb">
+            <a href="#"><img src="assets/images/serv6.png" alt="HDMI" loading="lazy"></a>
+            <span class="price"><i class="fa fa-bell fa-2x"></i></span>
+          </div>
+          <div class="down-content">
+            <h4>موسع HDMI</h4>
+            <span class="author">حل متكامل لتمديد إشارات HDMI لمسافات طويلة دون فقدان الجودة.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-lg-4 col-md-6 mb-30 event_outer design">
+        <div class="events_item">
+          <div class="thumb">
+            <a href="#"><img src="assets/images/serv7.jpg" alt="الإنتركم" loading="lazy"></a>
+            <span class="price"><i class="fa fa-home fa-2x"></i></span>
+          </div>
+          <div class="down-content">
+            <h4>جرس الباب أو الإنتركم</h4>
+            <span class="author">جرس وإنتركم مرئي وصوتي للتحكم بالزوار بسهولة.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-lg-4 col-md-6 mb-30 event_outer design">
+        <div class="events_item">
+          <div class="thumb">
+            <a href="#"><img src="assets/images/serv8.jpg" alt="داش كام" loading="lazy"></a>
+            <span class="price"><i class="fa fa-map-marker fa-2x"></i></span>
+          </div>
+          <div class="down-content">
+            <h4>داش كام</h4>
+            <span class="author">كاميرات عالية الجودة تُثبّت داخل السيارة لتسجيل كل ما يحدث أثناء القيادة.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
     
